@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Data (tracked by DVC, not Git)
+data/iris.csv
+
+# Model artifacts
+*.pkl
+*.joblib
+model_info.txt
+
+# MLflow
+mlruns/
+
+# IDE
+.vscode/
+.idea/
