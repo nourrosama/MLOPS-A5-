@@ -27,7 +27,7 @@ with mlflow.start_run() as run:
     accuracy = accuracy_score(y_test, preds)
 
     mlflow.log_param("model", "LogisticRegression")
-    mlflow.log_param("max_iter", 200)
+    mlflow.log_param("max_iter", 5)
     mlflow.log_metric("accuracy", accuracy)
     mlflow.sklearn.log_model(model, "model")
 
